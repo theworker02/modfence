@@ -1,12 +1,15 @@
 {
-  "name": "@theworker02/modfence",
-  "version": "1.0.0",
+  "name": "@magnexis/modfence",
+  "version": "1.0.1",
   "description": "TypeScript import-boundary linter. Declare layers, ban cycles, and explain why an import is illegal.",
   "license": "MIT",
   "author": "theworker02",
   "type": "module",
   "bin": {
-    "modfence": "./dist/cli.js"
+    "modfence": "bin/modfence.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,7 +19,7 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "logo.png", "LICENSE", "README.md"],
+  "files": ["bin", "dist", "logo.png", "LICENSE", "README.md"],
   "engines": { "node": ">=20" },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",

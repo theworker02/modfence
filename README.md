@@ -7,14 +7,14 @@
 TypeScript import-boundary linter. Declare layers, say which layers may import which, and fail CI when someone reaches across the fence.
 
 [![CI](https://github.com/theworker02/modfence/actions/workflows/ci.yml/badge.svg)](https://github.com/theworker02/modfence/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/@theworker02/modfence.svg)](https://www.npmjs.com/package/@theworker02/modfence)
+[![npm](https://img.shields.io/npm/v/@magnexis/modfence.svg)](https://www.npmjs.com/package/@magnexis/modfence)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Install
 
 ```bash
-npm install -g @theworker02/modfence
-npx @theworker02/modfence --help
+npm install -g @magnexis/modfence
+npx @magnexis/modfence --help
 ```
 
 Requires Node.js 20+.
@@ -26,8 +26,8 @@ Requires Node.js 20+.
 ## Quick start
 
 ```bash
-npx @theworker02/modfence init
-npx @theworker02/modfence check
+npx @magnexis/modfence init
+npx @magnexis/modfence check
 ```
 
 `modfence.json`:
@@ -63,13 +63,13 @@ modfence graph             Mermaid flowchart of layer → layer edges
 CI:
 
 ```yaml
-- run: npx @theworker02/modfence check --json
+- run: npx @magnexis/modfence check --json
 ```
 
 ## Library
 
 ```ts
-import { checkLayers, collectEdges, defaultConfig } from "@theworker02/modfence";
+import { checkLayers, collectEdges, defaultConfig } from "@magnexis/modfence";
 
 const config = defaultConfig();
 const edges = await collectEdges({ ...config, root: process.cwd() });
