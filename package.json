@@ -1,0 +1,43 @@
+{
+  "name": "@theworker02/modfence",
+  "version": "1.0.0",
+  "description": "TypeScript import-boundary linter. Declare layers, ban cycles, and explain why an import is illegal.",
+  "license": "MIT",
+  "author": "theworker02",
+  "type": "module",
+  "bin": {
+    "modfence": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "logo.png", "LICENSE", "README.md"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theworker02/modfence.git"
+  },
+  "bugs": { "url": "https://github.com/theworker02/modfence/issues" },
+  "homepage": "https://github.com/theworker02/modfence#readme",
+  "keywords": ["typescript", "imports", "architecture", "linter", "cli", "layers"],
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
