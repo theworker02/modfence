@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="logo.png" alt="modfence" width="160" height="160" />
 </p>
 
@@ -8,7 +8,7 @@ TypeScript import-boundary linter. Declare layers, say which layers may import w
 
 [![CI](https://github.com/theworker02/modfence/actions/workflows/ci.yml/badge.svg)](https://github.com/theworker02/modfence/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/@magnexis/modfence.svg)](https://www.npmjs.com/package/@magnexis/modfence)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![license](https://img.shields.io/badge/license-Proprietary%20(source--available)-blue.svg)](LICENSE)
 
 ## Install
 
@@ -21,7 +21,7 @@ Requires Node.js 20+.
 
 ## Why
 
-`eslint-plugin-import` can ban paths, but teams usually want a *layer* story: UI may talk to domain, domain must not talk to infra, infra may implement domain. Cycles still sneak in. modfence is a dedicated CLI for that policy — including `why` (explain a file) and `graph` (Mermaid of observed layer edges).
+`eslint-plugin-import` can ban paths, but teams usually want a *layer* story: UI may talk to domain, domain must not talk to infra, infra may implement domain. Cycles still sneak in. modfence is a dedicated CLI for that policy â€” including `why` (explain a file) and `graph` (Mermaid of observed layer edges).
 
 ## Quick start
 
@@ -57,7 +57,7 @@ Same-layer imports are always allowed. External packages (`react`, `node:fs`) ar
 modfence init              Write starter modfence.json
 modfence check [--json]    Exit 1 on layer or cycle violations
 modfence why <file>        Layer + outbound relative imports
-modfence graph             Mermaid flowchart of layer → layer edges
+modfence graph             Mermaid flowchart of layer â†’ layer edges
 ```
 
 CI:
@@ -88,4 +88,5 @@ npm run build
 
 ## License
 
-MIT. Sponsor via [GitHub](https://github.com/sponsors/theworker02) or [thanks.dev](https://thanks.dev/u/gh/theworker02).
+**Source-available proprietary** — evaluation under [LICENSE](./LICENSE); commercial / production use via [COMMERCIAL.md](./COMMERCIAL.md). See [LICENSE_TRANSITION_NOTICE.md](./LICENSE_TRANSITION_NOTICE.md) and [NOTICE](./NOTICE).
+
