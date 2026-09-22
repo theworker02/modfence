@@ -21,7 +21,7 @@ Requires Node.js 20+.
 
 ## Why
 
-`eslint-plugin-import` can ban paths, but teams usually want a *layer* story: UI may talk to domain, domain must not talk to infra, infra may implement domain. Cycles still sneak in. modfence is a dedicated CLI for that policy â€” including `why` (explain a file) and `graph` (Mermaid of observed layer edges).
+`eslint-plugin-import` can ban paths, but teams usually want a *layer* story: UI may talk to domain, domain must not talk to infra, infra may implement domain. Cycles still sneak in. modfence is a dedicated CLI for that policy Ã¢â‚¬â€ including `why` (explain a file) and `graph` (Mermaid of observed layer edges).
 
 ## Quick start
 
@@ -57,7 +57,7 @@ Same-layer imports are always allowed. External packages (`react`, `node:fs`) ar
 modfence init              Write starter modfence.json
 modfence check [--json]    Exit 1 on layer or cycle violations
 modfence why <file>        Layer + outbound relative imports
-modfence graph             Mermaid flowchart of layer â†’ layer edges
+modfence graph             Mermaid flowchart of layer Ã¢â€ â€™ layer edges
 ```
 
 CI:
@@ -88,7 +88,7 @@ npm run build
 
 ## License
 
-**Source-available proprietary** — evaluation under [LICENSE](./LICENSE); commercial / production use via [COMMERCIAL.md](./COMMERCIAL.md). See [LICENSE_TRANSITION_NOTICE.md](./LICENSE_TRANSITION_NOTICE.md) and [NOTICE](./NOTICE).
+**Source-available proprietary** â€” evaluation under [LICENSE](./LICENSE); commercial / production use via [COMMERCIAL.md](./COMMERCIAL.md). See [LICENSE_TRANSITION_NOTICE.md](./LICENSE_TRANSITION_NOTICE.md) and [NOTICE](./NOTICE).
 
 
 ---
@@ -96,3 +96,7 @@ npm run build
 ## License & acquisition
 
 This project is **proprietary**. Production use, redistribution, and commercial deployment require a written commercial license or completed acquisition. See [LICENSE](./LICENSE) and [ACQUISITION.md](./ACQUISITION.md). Contact [@theworker02](https://github.com/theworker02).
+
+## Status
+
+modfence is actively packaged for commercial licensing and acquisition diligence. See [ACQUISITION.md](./ACQUISITION.md) and [docs/acquisition/](./docs/acquisition/).
