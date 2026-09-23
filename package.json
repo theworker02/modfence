@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "@magnexis/modfence",
     "version":  "1.0.1",
     "description":  "TypeScript import-boundary linter. Declare layers, ban cycles, and explain why an import is illegal.",
