@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="docs/logo.svg" alt="modfence official logo" width="128" height="128">
+</p>
+
+<p align="center">
   <img src="logo.png" alt="modfence" width="160" height="160" />
 </p>
 
